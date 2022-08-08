@@ -1,0 +1,47 @@
+@use 'variables';
+@use 'initial';
+@use 'mixins';
+
+    .main-container{
+    border: 1px solid red;
+    width: 375px;
+    margin: auto;
+    @include mixins.desktop-view;
+    }
+    .navbar{
+        border: 1px solid navy;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 24px 0;
+        &__logo{
+            width: 80px;
+            height: 25px;
+            @include mixins.desktop-view(170px);
+        }
+        &__nav-container{
+            border: 1px solid red; 
+            display:flex;
+            width:167px;
+            font-size: 0.8em;
+            justify-content:space-between;
+            @include mixins.desktop-view(274px, unset, 1em);
+            li {
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                &:hover{
+                    color:variables.$Bright-Blue;
+                }
+            }
+        }
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
