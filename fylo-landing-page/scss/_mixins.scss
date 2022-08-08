@@ -1,0 +1,7 @@
+@mixin desktop-view($width:1440px, $height:unset, $f-size:unset){
+    @media (min-width:1440px){
+            width: $width;
+            height: $height; 
+            font-size: $f-size;   
+    }
+}

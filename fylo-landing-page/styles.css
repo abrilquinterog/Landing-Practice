@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(243deg, 87%, 12%);
+}
+
+.main-container {
+  border: 1px solid red;
+  width: 375px;
+  margin: auto;
+}
+@media (min-width: 1440px) {
+  .main-container {
+    width: 1440px;
+    height: unset;
+    font-size: unset;
+  }
+}
+
+.navbar {
+  border: 1px solid navy;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px 0;
+}
+.navbar__logo {
+  width: 80px;
+  height: 25px;
+}
+@media (min-width: 1440px) {
+  .navbar__logo {
+    width: 170px;
+    height: unset;
+    font-size: unset;
+  }
+}
+.navbar__nav-container {
+  border: 1px solid red;
+  display: flex;
+  width: 167px;
+  font-size: 0.8em;
+  justify-content: space-between;
+}
+@media (min-width: 1440px) {
+  .navbar__nav-container {
+    width: 274px;
+    height: unset;
+    font-size: 1em;
+  }
+}
+.navbar__nav-container li {
+  list-style: none;
+}
+.navbar__nav-container a {
+  text-decoration: none;
+}
+.navbar__nav-container a:hover {
+  color: hsl(224deg, 93%, 58%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */
