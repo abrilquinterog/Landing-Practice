@@ -13,6 +13,7 @@
         display: flex;
         justify-content: space-between;
         padding: 24px 24px 0;
+        margin-bottom: 100px;
         &__logo{
             width: 80px;
             height: 25px;
@@ -35,6 +36,51 @@
                 }
             }
         }
+    }
+
+    .header {
+        border: solid black 1px;
+        padding: 0 24px 182px;
+        &__illustration{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+      .header-content{
+        &__tittle{
+            font-size: 1.5em;
+            font-family: variables.$Headers-font;
+            text-align: center;
+            line-height: 30px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        &__description{
+            text-align: center;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            //border: solid darkcyan 1px;
+            height: 100px;
+            justify-content: space-between;
+        }
+        &__form input{
+            height: 40px;
+            border-radius: 4px;
+            border: 1px solid variables.$Light-Gray;
+        }
+        &__form input[type='text']{
+            padding-left: 15px;
+        }
+        &__form input[type='text']::placeholder{
+            color: variables.$Light-Gray;
+        }
+        &__form input[type='submit']{
+            @include mixins.button;
+        }
+      }
     }
     
     .attribution {

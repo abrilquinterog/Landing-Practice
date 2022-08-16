@@ -1,7 +1,21 @@
+@use 'variables';
+
 @mixin desktop-view($width:1440px, $height:unset, $f-size:unset){
     @media (min-width:1440px){
             width: $width;
             height: $height; 
             font-size: $f-size;   
+    }
+}
+
+@mixin button{
+    background-color: variables.$Bright-Blue;
+    color: variables.$Light-Grayish-Blue;
+    font-weight: 700;
+    font-size: 0.9em;
+    border: none;
+    &:hover{
+        cursor: pointer;
+        filter:brightness(120%);
     }
 }
