@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 24px 24px 0;
+  margin-bottom: 100px;
 }
 .navbar__logo {
   width: 80px;
@@ -62,6 +63,56 @@ body {
 }
 .navbar__nav-container a:hover {
   color: hsl(224deg, 93%, 58%);
+}
+
+.header {
+  border: solid black 1px;
+  padding: 0 24px 182px;
+}
+.header__illustration {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.header .header-content__tittle {
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.header .header-content__description {
+  text-align: center;
+  font-size: 0.95em;
+  margin-bottom: 30px;
+}
+.header .header-content__form {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
+.header .header-content__form input {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid hsl(0deg, 0%, 75%);
+}
+.header .header-content__form input[type=text] {
+  padding-left: 15px;
+}
+.header .header-content__form input[type=text]::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+.header .header-content__form input[type=submit] {
+  background-color: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+  font-weight: 700;
+  font-size: 0.9em;
+  border: none;
+}
+.header .header-content__form input[type=submit]:hover {
+  cursor: pointer;
+  filter: brightness(120%);
 }
 
 .attribution {
